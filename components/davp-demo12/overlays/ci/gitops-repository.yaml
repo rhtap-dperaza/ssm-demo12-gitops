@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: davp-demo12-gitops-repository
+spec:
+  url: https://github.com/rhtap-dperaza/ssm-demo12-gitops

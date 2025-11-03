@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  tssc/gitops: davp-demo12 
+  janus-idp.io/tekton: davp-demo12
+  backstage.io/kubernetes-id: davp-demo12
+  backstage.io/kubernetes-namespace: tssc-app 
+  app.kubernetes.io/part-of: davp-demo12
+resources:
+  - application-dev.yaml
+  - application-stage.yaml
+  - application-prod.yaml
