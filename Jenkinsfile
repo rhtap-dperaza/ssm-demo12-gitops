@@ -67,6 +67,7 @@ pipeline {
             steps {
                 container('runner') {
                     sh '''
+                        chmod +x ./rhtap/gather-images-to-upload-sbom.sh
                         echo "gathering sbom images"
                         ./rhtap/gather-images-to-upload-sbom.sh
                         echo "downloading sbom images"
