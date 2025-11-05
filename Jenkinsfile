@@ -72,6 +72,7 @@ pipeline {
                         ./rhtap/gather-images-to-upload-sbom.sh
                         echo "downloading sbom images"
                         ./rhtap/download-sbom-from-url-in-attestation.sh
+                        ls -la ./results/sboms
                         echo "uploading sbom images to tpa"
                         ./rhtap/upload-sbom-to-trustification.sh
                     '''
