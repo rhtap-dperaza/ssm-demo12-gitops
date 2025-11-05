@@ -25,6 +25,7 @@ pipeline {
         COSIGN_SECRET_PASSWORD = credentials('COSIGN_SECRET_PASSWORD')
         COSIGN_SECRET_KEY = credentials('COSIGN_SECRET_KEY')
         COSIGN_PUBLIC_KEY = credentials('COSIGN_PUBLIC_KEY')
+        QUAY_IO_CREDS = credentials('QUAY_IO_CREDS')
         IMAGE_REGISTRY_USER = credentials('IMAGE_REGISTRY_USER')
         IMAGE_REGISTRY_PASSWORD = credentials('IMAGE_REGISTRY_PASSWORD')
         TUF_MIRROR = credentials('TUF_MIRROR')
