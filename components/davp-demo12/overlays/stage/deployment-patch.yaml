@@ -12,5 +12,5 @@ spec:
   template: 
     spec:
       containers:
-      - image: quay.io/redhat-tssc/task-runner:1.7
+      - image: quay.io/tsscdavp/ssm-demo12:jenkins-46c70ab3dfcfbc1b82fad282cbabe90734f6d33e
         name: container-image  
